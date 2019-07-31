@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InputUser</string>
+    <string-array name="kelas">
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+</resources>
