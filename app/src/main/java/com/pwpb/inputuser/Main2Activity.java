@@ -5,16 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity{
+public class Main2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        Button btn = findViewById(R.id.btnSubmit);
+        setContentView(R.layout.activity_main2);
+        Button btn = findViewById(R.id.pindahLagi);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,10 +22,7 @@ public class MainActivity extends AppCompatActivity{
     }
 
     public void submitClick(){
-        EditText edt = findViewById(R.id.editText);
-        String username = edt.getText().toString();
-        Intent intent = new Intent(MainActivity.this, inputUserDLL.class);
-        intent.putExtra("username", username);
+        Intent intent = new Intent(Main2Activity.this, Main3Activity.class);
         startActivity(intent);
     }
 }

@@ -1,9 +1,11 @@
 package com.pwpb.inputuser;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +25,8 @@ public class inputUserDLL extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(inputUserDLL.this, GridLayout.class);
+                startActivity(intent);
                 Toast toast = Toast.makeText(getApplicationContext(),"Mengirim Data...", Toast.LENGTH_LONG);
                 toast.show();
             }
